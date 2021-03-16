@@ -1,16 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using DataStructs;
 using Dreamteck.Splines;
+using Internal;
+using Player;
+using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class LevelConstructor : MonoBehaviour
+public class LevelConstructor : MonoBehaviour, IRegistrable
 {
-	[SerializeField] private LevelsSO         _levels;
-	[SerializeField] private PlayersViewSO    _players;
-	[SerializeField] private PlayerController _playerController;
-	[SerializeField] private CameraFollow     _cameraFollow;
-	
+	[SerializeField] private LevelsSO           _levels;
+	[SerializeField] private PlayersViewSO      _players;
+	[SerializeField] private GameplayController _GameplayController;
+	[SerializeField] private CameraFollow       _cameraFollow;
+
 	private LevelData            _level;
 	private LevelData.PropData[] props;
 
@@ -19,16 +21,36 @@ public class LevelConstructor : MonoBehaviour
 	private GameObject _propsLeftGo;
 	private GameObject _propsRightGo;
 
+	private void Awake()     => Register();
+	private void OnDestroy() => Unregister();
+
 #if UNITY_EDITOR
 	[ContextMenu("Create level")]
 	public void CreateLevel() => CreateLevel(0, 0);
 	[ContextMenu("Destroy level")]
 	public void DestroyLevel()
 	{
-		if (_levelGo) DestroyImmediate(_levelGo);
-		if (_playerGo) DestroyImmediate(_playerGo);
-		if (_propsLeftGo) DestroyImmediate(_propsLeftGo);
-		if (_propsRightGo) DestroyImmediate(_propsRightGo);
+#if UNITY_EDITOR
+		if (!EditorApplication.isPlaying)
+		{
+			if (_levelGo) DestroyImmediate(_levelGo);
+			if (_playerGo) DestroyImmediate(_playerGo);
+			if (_propsLeftGo) DestroyImmediate(_propsLeftGo);
+			if (_propsRightGo) DestroyImmediate(_propsRightGo);
+		}
+		else
+		{
+			if (_levelGo) Destroy(_levelGo);
+			if (_playerGo) Destroy(_playerGo);
+			if (_propsLeftGo) Destroy(_propsLeftGo);
+			if (_propsRightGo) Destroy(_propsRightGo);
+		}
+#else
+		if (_levelGo) Destroy(_levelGo);
+		if (_playerGo) Destroy(_playerGo);
+		if (_propsLeftGo) Destroy(_propsLeftGo);
+		if (_propsRightGo) Destroy(_propsRightGo);
+#endif
 	}
 
 #endif
@@ -51,7 +73,7 @@ public class LevelConstructor : MonoBehaviour
 
 		_playerGo            = Instantiate(_players.playerPrefabs[playerIndex].prefab.@object);
 		_cameraFollow.target = _playerGo.transform;
-		_playerController.StartGame(levelConfig.tracks, _playerGo.transform);
+		_GameplayController.StartGame(levelConfig.tracks, _playerGo.transform, levelConfig.StartTrack);
 	}
 
 	private void CreateProps(SplineComputer spline, LevelConfig levelConfig, bool leftSide)
@@ -76,4 +98,8 @@ public class LevelConstructor : MonoBehaviour
 		}
 
 	}
+#region Interfaces
+	public void Register()   => Locator.Register(typeof(LevelConstructor), this);
+	public void Unregister() => Locator.Unregister(typeof(LevelConstructor));
+  #endregion
 }

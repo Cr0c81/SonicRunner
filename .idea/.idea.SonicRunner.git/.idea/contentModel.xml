@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\KpoKec\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\KpoKec\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_SonicRunner.git.2001712802.00" t="ExcludeRecursive" />
+    <e p="U:\!_WORK\SonicRunner.git" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Bonus" t="Include">
+            <e p="BonusBase.cs" t="Include" />
+          </e>
+          <e p="CameraFollow.cs" t="Include" />
+          <e p="DataStructs" t="Include">
+            <e p="LevelData.cs" t="Include" />
+            <e p="LevelsSO.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+            <e p="PlayersViewSO.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="CameraFollow_editor.cs" t="Include" />
+          </e>
+          <e p="Internal" t="Include">
+            <e p="ColliderProxy.cs" t="Include" />
+            <e p="Cr0c_tools.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="LazyObject_drawer.cs" t="Include" />
+              <e p="MinMaxFloat_drawer.cs" t="Include" />
+            </e>
+            <e p="IRegistrable.cs" t="Include" />
+            <e p="LazyObject.cs" t="Include" />
+            <e p="Locator.cs" t="Include" />
+            <e p="MinMaxFloat.cs" t="Include" />
+            <e p="ResourceLoader.cs" t="Include" />
+          </e>
+          <e p="LevelConfig.cs" t="Include" />
+          <e p="LevelConstructor.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="GameplayController.cs" t="Include" />
+            <e p="InputController.cs" t="Include" />
+            <e p="IPlayer.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="IScoreWidget.cs" t="Include" />
+            <e p="IWidgetBase.cs" t="Include" />
+            <e p="MainMenuWidget.cs" t="Include" />
+            <e p="Scorewidget.cs" t="Include" />
+            <e p="WidgetBase.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="Custom_Unlit_Base.shader" t="Include" />
+        </e>
+        <e p="Sources" t="Include">
+          <e p="Models" t="Include">
+            <e p="Dreamteck" t="Include">
+              <e p="Splines" t="Include">
+                <e p="Components" t="Include">
+                  <e p="BlankUser.cs" t="Include" />
+                  <e p="EdgeColliderGenerator.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="BakeMeshWindow.cs" t="Include" />
+                    <e p="ExtrudeMeshEditor.cs" t="Include" />
+                    <e p="LengthCalculatorEditor.cs" t="Include" />
+                    <e p="MeshGenEditor.cs" t="Include" />
+                    <e p="NodeEditor.cs" t="Include" />
+                    <e p="ObjectBenderEditor.cs" t="Include" />
+                    <e p="ObjectControllerEditor.cs" t="Include" />
+                    <e p="ParticleControllerEditor.cs" t="Include" />
+                    <e p="PathGeneratorEditor.cs" t="Include" />
+                    <e p="PolygonColliderGenEditor.cs" t="Include" />
+                    <e p="SplineFollowerEditor.cs" t="Include" />
+                    <e p="SplineMeshEditor.cs" t="Include" />
+                    <e p="SplinePositionerEditor.cs" t="Include" />
+                    <e p="SplineProjectorEditor.cs" t="Include" />
+                    <e p="SplineRendererEditor.cs" t="Include" />
+                    <e p="SplineTracerEditor.cs" t="Include" />
+                    <e p="SplineUserEditor.cs" t="Include" />
+                    <e p="SplineUserSubEditor.cs" t="Include" />
+                    <e p="SurfaceGeneratorEditor.cs" t="Include" />
+                    <e p="TubeGeneratorEditor.cs" t="Include" />
+                    <e p="WaveformGeneratorEditor.cs" t="Include" />
+                  </e>
+                  <e p="ExtrudeMesh.cs" t="Include" />
+                  <e p="LengthCalculator.cs" t="Include" />
+                  <e p="MeshGenerator.cs" t="Include" />
+                  <e p="Node.cs" t="Include" />
+                  <e p="ObjectBender.cs" t="Include" />
+                  <e p="ObjectController.cs" t="Include" />
+                  <e p="ParticleController.cs" t="Include" />
+                  <e p="PathGenerator.cs" t="Include" />
+                  <e p="PolygonColliderGenerator.cs" t="Include" />
+                  <e p="SplineComputer.cs" t="Include" />
+                  <e p="SplineFollower.cs" t="Include" />
+                  <e p="SplineMesh.cs" t="Include" />
+                  <e p="SplinePositioner.cs" t="Include" />
+                  <e p="SplineProjector.cs" t="Include" />
+                  <e p="SplineRenderer.cs" t="Include" />
+                  <e p="SplineTracer.cs" t="Include" />
+                  <e p="SplineUser.cs" t="Include" />
+                  <e p="SurfaceGenerator.cs" t="Include" />
+                  <e p="TubeGenerator.cs" t="Include" />
+                  <e p="WaveformGenerator.cs" t="Include" />
+                </e>
+                <e p="Core" t="Include">
+                  <e p="CustomOffsetModule.cs" t="Include" />
+                  <e p="CustomRotationModule.cs" t="Include" />
+                  <e p="IO" t="Include">
+                    <e p="CSV.cs" t="Include" />
+                    <e p="SplineParser.cs" t="Include" />
+                    <e p="SVG.cs" t="Include" />
+                  </e>
+                  <e p="Morph.cs" t="Include" />
+                  <e p="ObjectSequence.cs" t="Include" />
+                  <e p="Primitives" t="Include">
+                    <e p="Capsule.cs" t="Include" />
+                    <e p="Ellipse.cs" t="Include" />
+                    <e p="Line.cs" t="Include" />
+                    <e p="Ngon.cs" t="Include" />
+                    <e p="Rectangle.cs" t="Include" />
+                    <e p="RoundedRectangle.cs" t="Include" />
+                    <e p="Spiral.cs" t="Include" />
+                    <e p="SplinePrimitive.cs" t="Include" />
+                    <e p="Star.cs" t="Include" />
+                  </e>
+                  <e p="Spline.cs" t="Include" />
+                  <e p="SplineAddress.cs" t="Include" />
+                  <e p="SplinePoint.cs" t="Include" />
+                  <e p="SplinePrefs.cs" t="Include" />
+                  <e p="SplineResult.cs" t="Include" />
+                  <e p="SplineTrigger.cs" t="Include" />
+                  <e p="TransformModule.cs" t="Include" />
+                </e>
+                <e p="Editor" t="Include">
+                  <e p="changelog.txt" t="Include" />
+                  <e p="CustomOffsetModuleEditor.cs" t="Include" />
+                  <e p="CustomRotationModuleEditor.cs" t="Include" />
+                  <e p="GUI" t="Include">
+                    <e p="GUIObject.cs" t="Include" />
+                    <e p="PointSelector.cs" t="Include" />
+                  </e>
+                  <e p="MorphWindow.cs" t="Include" />
+                  <e p="PathWindow.cs" t="Include" />
+                  <e p="PointTransformer.cs" t="Include" />
+                  <e p="PresetsWindow.cs" t="Include" />
+                  <e p="Primitives" t="Include">
+                    <e p="CapsuleEditor.cs" t="Include" />
+                    <e p="EllipseEditor.cs" t="Include" />
+                    <e p="LineEditor.cs" t="Include" />
+                    <e p="NgonEditor.cs" t="Include" />
+                    <e p="PrimitiveEditor.cs" t="Include" />
+                    <e p="RectangleEditor.cs" t="Include" />
+                    <e p="RoundedRectangleEditor.cs" t="Include" />
+                    <e p="SpiralEditor.cs" t="Include" />
+                    <e p="StarEditor.cs" t="Include" />
+                  </e>
+                  <e p="RelaxWindow.cs" t="Include" />
+                  <e p="SplineComputerMergeEditor.cs" t="Include" />
+                  <e p="SplineComputerSplitEditor.cs" t="Include" />
+                  <e p="SplineDrawer.cs" t="Include" />
+                  <e p="SplineEditor.cs" t="Include" />
+                  <e p="SplineEditorGUI.cs" t="Include" />
+                  <e p="SplineEditorHandles.cs" t="Include" />
+                  <e p="SplineEditorToolbar.cs" t="Include" />
+                  <e p="SplineEditorWindow.cs" t="Include" />
+                  <e p="SplinePointDefaultEditor.cs" t="Include" />
+                  <e p="SplinePointEditor.cs" t="Include" />
+                  <e p="SplinePointMirrorEditor.cs" t="Include" />
+                  <e p="SplinePointNormalEditor.cs" t="Include" />
+                  <e p="SplinePointPositionEditor.cs" t="Include" />
+                  <e p="SplinePointRotationEditor.cs" t="Include" />
+                  <e p="SplinePointScaleEditor.cs" t="Include" />
+                  <e p="SplinePreset.cs" t="Include" />
+                  <e p="Tools" t="Include">
+                    <e p="BakeTool.cs" t="Include" />
+                    <e p="Explorer.cs" t="Include" />
+                    <e p="ImportTool.cs" t="Include" />
+                    <e p="LevelTerrainTool.cs" t="Include" />
+                    <e p="ObjectSpawnTool.cs" t="Include" />
+                    <e p="SplineTool.cs" t="Include" />
+                    <e p="SplineToolsWindow.cs" t="Include" />
+                    <e p="UpdateTool.cs" t="Include" />
+                  </e>
+                  <e p="TransformModuleEditor.cs" t="Include" />
+                  <e p="WelcomeScreen.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="DMath.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="DreamteckEditorGUI.cs" t="Include" />
+                  <e p="EditorGUIEvents.cs" t="Include" />
+                  <e p="FindDerivedClasses.cs" t="Include" />
+                  <e p="WelcomeWindow.cs" t="Include" />
+                </e>
+                <e p="ImageDB.cs" t="Include" />
+                <e p="LinearAlgebraUtility.cs" t="Include" />
+                <e p="MeshUtility.cs" t="Include" />
+                <e p="ResourceUtility.cs" t="Include" />
+                <e p="SceneUtility.cs" t="Include" />
+                <e p="ScriptableObjectUtility.cs" t="Include" />
+                <e p="TransformUtility.cs" t="Include" />
+                <e p="TS_Bounds.cs" t="Include" />
+                <e p="TS_Mesh.cs" t="Include" />
+                <e p="TS_Transform.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Eggman" t="Include">
+              <e p="readme.txt" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="AnimatorController.cs" t="Include" />
+                <e p="Camera Scripts" t="Include">
+                  <e p="MouseOrbitImproved.cs" t="Include" />
+                </e>
+                <e p="Swapper.cs" t="Include" />
+              </e>
+              <e p="UnityChanShader" t="Include">
+                <e p="Shader" t="Include">
+                  <e p="CharaMain.cginc" t="Include" />
+                  <e p="CharaOutline.cginc" t="Include" />
+                  <e p="CharaSkin.cginc" t="Include" />
+                  <e p="readme.txt" t="Include" />
+                  <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_eye.shader" t="Include" />
+                  <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_fuku.shader" t="Include" />
+                  <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+                  <e p="Unitychan_chara_hada.shader" t="Include" />
+                  <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_hair.shader" t="Include" />
+                  <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SonicRunner.git.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

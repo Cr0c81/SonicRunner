@@ -8,6 +8,8 @@ using UnityEngine;
 public class LevelConfig : MonoBehaviour
 {
 	[SerializeField] private MinMaxFloat      _width;
+	[SerializeField] private int              _startTrack = 1;
+	public                   int              StartTrack => _startTrack;
 	public                   SplineComputer[] tracks = new SplineComputer[3];
 	public                   float            minWidth => _width.Min;
 	public                   float            maxWidth => _width.Max;
