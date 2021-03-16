@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4742ed61887343e7ba2a6d339a85b6e8, type: 3}
+  m_Name: Levels
+  m_EditorClassIdentifier: 
+  levels:
+  - name: Level 1
+    logo: {fileID: 0}
+    trackPrefab:
+      path: Levels/1/Level_1
+    props:
+    - prefab:
+        path: Levels/1/Props/rock_tall01
+      space:
+        _Min: 10
+        _Max: 30
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 1
+        _Max: 3
+        _AbsoluteMin: 0
+        _AbsoluteMax: 3
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 461210986
+      weight: 1
+    - prefab:
+        path: Levels/1/Props/rock_tall02
+      space:
+        _Min: 10
+        _Max: 30
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 1
+        _Max: 3
+        _AbsoluteMin: 0
+        _AbsoluteMax: 3
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: -2098226746
+      weight: 1
+    - prefab:
+        path: Levels/1/Props/rock_tall03
+      space:
+        _Min: 10
+        _Max: 30
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 1
+        _Max: 3
+        _AbsoluteMin: 0
+        _AbsoluteMax: 3
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 962319746
+      weight: 0.25
+    - prefab:
+        path: Levels/1/Props/rock_tall04
+      space:
+        _Min: 10
+        _Max: 30
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 1
+        _Max: 3
+        _AbsoluteMin: 0
+        _AbsoluteMax: 3
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 2000763940
+      weight: 0.25
+    - prefab:
+        path: Levels/1/Props/Log_stump02
+      space:
+        _Min: 5
+        _Max: 10
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 3
+        _Max: 10
+        _AbsoluteMin: 0
+        _AbsoluteMax: 30
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: -774369765
+      weight: 5
+    - prefab:
+        path: Levels/1/Props/Log_tree
+      space:
+        _Min: 10
+        _Max: 20
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 3
+        _Max: 8
+        _AbsoluteMin: 0
+        _AbsoluteMax: 30
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 1344451429
+      weight: 5
+    - prefab:
+        path: Levels/1/Props/tree04
+      space:
+        _Min: 10
+        _Max: 15
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 3
+        _Max: 9
+        _AbsoluteMin: 0
+        _AbsoluteMax: 30
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 461210986
+      weight: 5
+    - prefab:
+        path: Levels/1/Props/tree05
+      space:
+        _Min: 10
+        _Max: 15
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 3
+        _Max: 9
+        _AbsoluteMin: 0
+        _AbsoluteMax: 30
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 461210986
+      weight: 5
+    - prefab:
+        path: Levels/1/Props/tree_dead
+      space:
+        _Min: 10
+        _Max: 15
+        _AbsoluteMin: 0
+        _AbsoluteMax: 50
+        id: 115058178
+      "s\u0441ale":
+        _Min: 3
+        _Max: 9
+        _AbsoluteMin: 0
+        _AbsoluteMax: 30
+        id: 1689578388
+      allowRotation: 1
+      xzRotation:
+        _Min: 0
+        _Max: 360
+        _AbsoluteMin: 0
+        _AbsoluteMax: 360
+        id: 461210986
+      weight: 3
+    bgMusic:
+      path: 
