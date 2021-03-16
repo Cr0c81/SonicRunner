@@ -19,16 +19,20 @@ namespace Player
 		[SerializeField] private float _speedMultTimer  = 0f;
 
 		private                  Transform        _playerTransform;
+		private                  Animator         _playerAnimator;
 		private                  SplineComputer[] _tracks;
 		private                  float            _track            = 1;
 		private                  int              _trackNeeded      = 1;
 		[SerializeField] private float            _trackChangeSpeed = 1f;
 
-		private IScoreWidget _scoreWidget;
-		private int          _score;
-		private double[]     _projects;
-		private bool         _isReady = false;
-		private int          _startTrack;
+		private                 IScoreWidget _scoreWidget;
+		private                 int          _score;
+		private                 double[]     _projects;
+		private                 bool         _isReady = false;
+		private                 int          _startTrack;
+		private static readonly int          Jump      = Animator.StringToHash("jump");
+		private static readonly int          Roll      = Animator.StringToHash("roll");
+		private static readonly int          MoveSpeed = Animator.StringToHash("moveSpeed");
 
 		private void Awake()     => Register();
 		private void OnDestroy() => Unregister();
@@ -58,6 +62,7 @@ namespace Player
 					if (_speedMultTimer <= 0f) _speedMultNeeded = 1f;
 				}
 			}
+			_playerAnimator.SetFloat(MoveSpeed, _speedBase * _speedMult / 10f);
 		}
 
 #region Interfaces
@@ -111,6 +116,7 @@ namespace Player
 			_track                    =  _startTrack;
 			_projects                 =  new double[_tracks.Length];
 			_playerTransform          =  player;
+			_playerAnimator           =  _playerTransform.GetComponentInChildren<Animator>();
 			_playerTransform.position =  _tracks[(int)_track].Evaluate(0).position;
 			_playerTransform.rotation =  _tracks[(int)_track].Evaluate(0).rotation;
 
@@ -151,8 +157,10 @@ namespace Player
 					_trackNeeded = Mathf.Clamp(++_trackNeeded, 0, _tracks.Length - 1);
 					break;
 				case InputController.InputType.Jump:
+					_playerAnimator.SetTrigger(Jump);
 					break;
 				case InputController.InputType.Roll:
+					_playerAnimator.SetTrigger(Roll);
 					break;
 				default:
 					throw new ArgumentOutOfRangeException(nameof(inputType), inputType, null);
