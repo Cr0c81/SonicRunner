@@ -176,7 +176,7 @@ MonoBehaviour:
         path: Levels/1/Props/tree05
       space:
         _Min: 10
-        _Max: 15
+        _Max: 20.032127
         _AbsoluteMin: 0
         _AbsoluteMax: 50
         id: 115058178
